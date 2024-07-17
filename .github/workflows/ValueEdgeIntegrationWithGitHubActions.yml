@@ -9,17 +9,13 @@ on:
     types: [requested, completed]
 # Node configuration for allowing HTTPS requests
 env:
-  NODE_TLS_REJECT_UNAUTHORIZED: 0
+  NODE_TLS_REJECT_UNAUTHORIZED: 1
 jobs:
   valueedge_integration_job:
     # List of runner tags
     runs-on: self-hosted
     name: ValueEdgeIntegrationWithGitHubActions#${{github.event.action}}#${{github.event.workflow_run.id}}
     steps:
-      - name: 'Upload Artifact'
-        uses: actions/upload-artifact@v4
-        with:
-          path: '**/TEST*.xml'
       - uses: actions/download-artifact@v4
         with:
           name: artifact
