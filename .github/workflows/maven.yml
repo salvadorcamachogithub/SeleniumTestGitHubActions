@@ -15,7 +15,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
+  SeleniumTestRun:
 
     runs-on: self-hosted
 
