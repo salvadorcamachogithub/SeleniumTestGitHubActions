@@ -39,6 +39,6 @@ jobs:
           # Automatically provided GitHub token
           githubToken: ${{secrets.GITHUB_TOKEN}}
           # The url that the CI Server in ValueEdge will point to
-          serverBaseUrl: https://github.com/salvadorcamachogithub/SeleniumTestGitHubActions.git
+          serverBaseUrl: https://github.com/salvadorcamachogithub/SeleniumTestGitHubActions
           # Pattern for identifying JUnit style report files for test result injection in ValueEdge
           unitTestResultsGlobPattern: '**/TEST*.xml'
