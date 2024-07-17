@@ -9,7 +9,7 @@ on:
     types: [requested, completed]
 # Node configuration for allowing HTTPS requests
 env:
-  NODE_TLS_REJECT_UNAUTHORIZED: 1
+  NODE_TLS_REJECT_UNAUTHORIZED: 0
 jobs:
   octane_integration_job:
     # List of runner tags
@@ -34,8 +34,8 @@ jobs:
           octaneUrl: 'https://almoctane-ams.saas.microfocus.com/'
           octaneSharedSpace: 211010
           octaneWorkspace: 23004
-          octaneClientId: ${{secrets.ALM_OCTANE_CLIENT_ID_VM}}
-          octaneClientSecret: ${{secrets.ALM_OCTANE_CLIENT_SECRET_VM}}
+          octaneClientId: ${{secrets.ALM_OCTANE_CLIENT_ID}}
+          octaneClientSecret: ${{secrets.ALM_OCTANE_CLIENT_SECRET}}
           # Automatically provided GitHub token
           githubToken: ${{secrets.GITHUB_TOKEN}}
           # The url that the CI Server in ALM Octane will point to
