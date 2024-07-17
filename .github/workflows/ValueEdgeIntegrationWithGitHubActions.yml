@@ -2,7 +2,7 @@ name: ValueEdgeIntegrationWithGitHubActions
 # Events the integration should be triggered on
 on:
   pull_request:
-    types: [opened, edited, closed, reopened]
+    types: [edited]
   workflow_run:
     # List of workflows to integrate with ValueEdge
     workflows: [CI Selenium Test GitHub Actions]
