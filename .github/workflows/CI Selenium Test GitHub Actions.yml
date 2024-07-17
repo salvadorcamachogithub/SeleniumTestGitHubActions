@@ -1,5 +1,9 @@
 name: CI Selenium Test GitHub Actions
 
+on:
+  push:
+    branches: [ "master" ]
+
 jobs:
   build:
 
