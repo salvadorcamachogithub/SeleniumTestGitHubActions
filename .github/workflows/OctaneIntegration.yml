@@ -33,7 +33,7 @@ jobs:
           # ALM Octane connection data
           octaneUrl: 'https://almoctane-ams.saas.microfocus.com/'
           octaneSharedSpace: 211010
-          octaneWorkspace: 23004
+          octaneWorkspace: 36001
           octaneClientId: ${{secrets.ALM_OCTANE_CLIENT_ID_VM}}
           octaneClientSecret: ${{secrets.ALM_OCTANE_CLIENT_SECRET_VM}}
           # Automatically provided GitHub token
