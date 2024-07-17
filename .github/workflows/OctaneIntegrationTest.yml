@@ -24,7 +24,7 @@ jobs:
         with:
           name: artifact
           path: 'artifacts/'
-      - name: GitHub Actions ALM Octane Integration
+      - name: GitHub Actions ValueEdge Integration
         # Reference to our public GitHub action
         uses: MicroFocus/alm-octane-github-actions-integration@v1.0
         id: gitHubActionsIntegration
