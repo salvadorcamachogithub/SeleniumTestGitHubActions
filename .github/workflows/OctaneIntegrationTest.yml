@@ -11,7 +11,7 @@ on:
 env:
   NODE_TLS_REJECT_UNAUTHORIZED: 1
 jobs:
-  octane_integration_job:
+  valueedge_integration_job:
     # List of runner tags
     runs-on: self-hosted
     name: OctaneIntegrationTest#${{github.event.action}}#${{github.event.workflow_run.id}}
