@@ -31,7 +31,7 @@ jobs:
         # Config parameters for the integration
         with:
           # ValueEdge connection data
-          octaneUrl: 'https://almoctane-ams.saas.microfocus.com'
+          octaneUrl: 'https://almoctane-ams.saas.microfocus.com/'
           octaneSharedSpace: 211010
           octaneWorkspace: 75001
           octaneClientId: ${{secrets.ALM_OCTANE_CLIENT_ID}}
