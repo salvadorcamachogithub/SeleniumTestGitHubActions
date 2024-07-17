@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="org.ot.SeleniumAOSTest" time="21.046" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2022.2.4"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.10+7"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.10.7-hotspot\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="Z:\Transfer VMs\Selenium IDE\SeleniumTestGitHubActions"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="Z:\Transfer VMs\Selenium IDE\SeleniumTestGitHubActions"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="17.0.10+7"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\demo\AppData\Local\Temp\1\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows Server 2019"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.4\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.4\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.10.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.6\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\program files (x86)\OpenText\UFT One\bin\WebDriver;C:\program files (x86)\OpenText\UFT One\bin;C:\Program Files (x86)\Micro Focus\Reflection\;C:\Program Files\OpenText\NV\lib\shunra\vcat;C:\Program Files (x86)\OpenText\LoadRunner\bin\DevWeb;C:\Python312\Scripts\;C:\Python312\;C:\Program Files\Eclipse Adoptium\jdk-17.0.10.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.22.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\opscode\chef\bin\;C:\Program Files\nodejs\;C:\Program Files\PostgreSQL\12\bin;C:\Program Files\Git\cmd;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Microsoft VS Code\bin;C:\Users\demo\AppData\Local\Microsoft\WindowsApps;C:\Users\demo\AppData\Roaming\npm;C:\tools\Cmder;C:\Program Files (x86)\dotnet\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\OpenText\UFT One\bin;C:\Users\demo\AppData\Local\Microsoft\WindowsApps;C:\Users\demo\AppData\Roaming\npm;C:\tools\Cmder;;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.4\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\demo"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="demo"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.4\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.4\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.2.4 test"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.10.7-hotspot"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.10"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.4\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-17.0.10+7"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="org.ot.SeleniumAOSTest" name="purchaseTablet" time="21.046"/>
+</testsuite>
