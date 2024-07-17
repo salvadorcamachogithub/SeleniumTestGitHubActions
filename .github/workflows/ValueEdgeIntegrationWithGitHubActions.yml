@@ -16,14 +16,6 @@ jobs:
     runs-on: self-hosted
     name: ValueEdgeIntegrationWithGitHubActions#${{github.event.action}}#${{github.event.workflow_run.id}}
     steps:
-      - name: 'Upload Artifact'
-        uses: actions/upload-artifact@v4
-        with:
-          path: '**/TEST*.xml'
-      - uses: actions/download-artifact@v4
-        with:
-          name: artifact
-          path: 'artifacts/'
       - name: GitHub Actions ValueEdge Integration
         # Reference to our public GitHub action
         uses: MicroFocus/alm-octane-github-actions-integration@v23.3.0
