@@ -26,7 +26,7 @@ jobs:
           path: 'artifacts/'
       - name: GitHub Actions ValueEdge Integration
         # Reference to our public GitHub action
-        uses: MicroFocus/alm-octane-github-actions-integration
+        uses: MicroFocus/alm-octane-github-actions-integration@v23.3.0
         id: gitHubActionsIntegration
         # Config parameters for the integration
         with:
@@ -39,6 +39,6 @@ jobs:
           # Automatically provided GitHub token
           githubToken: ${{secrets.GITHUB_TOKEN}}
           # The url that the CI Server in ValueEdge will point to
-          serverBaseUrl: https://github.com/salvadorcamachogithub/SeleniumTestGitHubActions
+          serverBaseUrl: https://github.com/salvadorcamachogithub/SeleniumTestGitHubActions.git
           # Pattern for identifying JUnit style report files for test result injection in ValueEdge
           unitTestResultsGlobPattern: '**/TEST*.xml'
