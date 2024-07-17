@@ -1,20 +1,20 @@
-name: OctaneIntegrationTest
+name: ValueEdgeIntegrationWithGitHubActions
 # Events the integration should be triggered on
 on:
   pull_request:
     types: [opened, edited, closed, reopened]
   workflow_run:
-    # List of workflows to integrate with ALM Octane
+    # List of workflows to integrate with ValueEdge
     workflows: [CI Selenium Test GitHub Actions]
     types: [requested, completed]
 # Node configuration for allowing HTTPS requests
 env:
   NODE_TLS_REJECT_UNAUTHORIZED: 1
 jobs:
-  octane_integration_job:
+  valueedge_integration_job:
     # List of runner tags
     runs-on: self-hosted
-    name: OctaneIntegrationTest#${{github.event.action}}#${{github.event.workflow_run.id}}
+    name: ValueEdgeIntegrationWithGitHubActions#${{github.event.action}}#${{github.event.workflow_run.id}}
     steps:
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v4
@@ -30,7 +30,7 @@ jobs:
         id: gitHubActionsIntegration
         # Config parameters for the integration
         with:
-          # ALM Octane connection data
+          # ValueEdge connection data
           octaneUrl: 'https://almoctane-ams.saas.microfocus.com/'
           octaneSharedSpace: 211010
           octaneWorkspace: 23004
@@ -38,7 +38,7 @@ jobs:
           octaneClientSecret: ${{secrets.ALM_OCTANE_CLIENT_SECRET}}
           # Automatically provided GitHub token
           githubToken: ${{secrets.GITHUB_TOKEN}}
-          # The url that the CI Server in ALM Octane will point to
+          # The url that the CI Server in ValueEdge will point to
           serverBaseUrl: https://github.com/salvadorcamachogithub/SeleniumTestGitHubActions
-          # Pattern for identifying JUnit style report files for test result injection in ALM Octane
+          # Pattern for identifying JUnit style report files for test result injection in ValueEdge
           unitTestResultsGlobPattern: '**/TEST*.xml'
