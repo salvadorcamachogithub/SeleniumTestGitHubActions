@@ -1,4 +1,4 @@
-name: OctaneIntegrationTest
+name: ValueEdgeIntegrationWithGitHubActions
 # Events the integration should be triggered on
 on:
   pull_request:
@@ -14,7 +14,7 @@ jobs:
   valueedge_integration_job:
     # List of runner tags
     runs-on: self-hosted
-    name: OctaneIntegrationTest#${{github.event.action}}#${{github.event.workflow_run.id}}
+    name: ValueEdgeIntegrationWithGitHubActions#${{github.event.action}}#${{github.event.workflow_run.id}}
     steps:
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v4
