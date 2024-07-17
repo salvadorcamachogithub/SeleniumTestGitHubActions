@@ -13,7 +13,7 @@ env:
 jobs:
   valueedge_integration_job:
     # List of runner tags
-    runs-on: nimbusclient
+    runs-on: self-hosted
     name: ValueEdgeIntegrationWithGitHubActions#${{github.event.action}}#${{github.event.workflow_run.id}}
     steps:
       - name: 'Upload Artifact'
