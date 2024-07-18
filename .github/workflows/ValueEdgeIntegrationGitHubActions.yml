@@ -33,7 +33,7 @@ jobs:
           # ValueEdge connection data
           octaneUrl: 'https://almoctane-ams.saas.microfocus.com/'
           octaneSharedSpace: 211010
-          octaneWorkspace: 23004
+          octaneWorkspace: 75001
           octaneClientId: ${{secrets.ALM_OCTANE_CLIENT_ID}}
           octaneClientSecret: ${{secrets.ALM_OCTANE_CLIENT_SECRET}}
           # Automatically provided GitHub token
