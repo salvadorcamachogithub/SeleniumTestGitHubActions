@@ -137,8 +137,8 @@ public class SeleniumAOSTest
         // Click on Profile icon
         // XPath: //*[@id="menuUser"]
         // Change to menuUsers to make it failed
-        XPath ="//*[@id='menuUsers']";
-        //XPath ="//*[@id='menuUser']";
+        //XPath ="//*[@id='menuUsers']";
+        XPath ="//*[@id='menuUser']";
         chromeDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(XPath)));
         chromeDriver.findElement(By.xpath(XPath)).click();
 
